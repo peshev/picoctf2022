@@ -1,0 +1,15 @@
+*** patchme.flag.py.orig	Thu Mar 17 12:13:10 2022
+--- patchme.flag.py	Thu Mar 17 12:13:59 2022
+*************** def level_1_pw_check():
+*** 28,31 ****
+  
+  
+  
+! level_1_pw_check()
+--- 28,33 ----
+  
+  
+  
+! #level_1_pw_check()
+! print(str_xor(flag_enc.decode(), "utilitarian"))
+! 
