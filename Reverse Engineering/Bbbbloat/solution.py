@@ -15,7 +15,7 @@ from utils import download_artifacts
 download_artifacts()
 
 binary_name = "bbbbloat"
-r = r2pipe.open(binary_name, flags=["-e", "bin.cache=true"])
+r = r2pipe.open(binary_name, flags=["-node", "bin.cache=true"])
 r.cmd("aaa")
 
 

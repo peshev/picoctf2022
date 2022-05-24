@@ -23,7 +23,7 @@ if os.path.exists(unpacked_binary_name):
 
 subprocess.check_output(["upx", "-d", binary_name, "-o", unpacked_binary_name])
 
-r = r2pipe.open(unpacked_binary_name, flags=["-e", "bin.cache=true"])
+r = r2pipe.open(unpacked_binary_name, flags=["-node", "bin.cache=true"])
 r.cmd("aaa")
 
 

@@ -81,7 +81,7 @@ os.chmod(pin_checker_filename, st.st_mode | stat.S_IEXEC)
 cracked_pin = attack_pin(pin_checker_filename)
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.connect(("saturn.picoctf.net", 50562))
+    s.connect(("saturn.picoctf.net", 49702))
     s.sendall(cracked_pin.encode() + b"\n")
     response = ""
     while True:
